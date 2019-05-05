@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>포트폴리오</title>
     <link rel="stylesheet" href="index.css">
+    <script src="/js/Grap.js"></script>
+    <script src="/js/Card.js"></script>
+    <script src="/js/gridAnim.js"></script>
 </head>
 <body>
     <div id="wrppaer">
@@ -24,24 +27,127 @@
 
         <section>
             <div class="myIntro">
-                <div class="myIMG"></div>
-                <div class="intro">
-                    <h2>자기 소개</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <div class="introBox">
+                    <div class="intro">
+                        <h2>자기 소개</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Assumenda in amet placeat sunt obcaecati repellendus fugit? 
                         Voluptatum, consectetur. 
                         Repellendus perspiciatis voluptatem reprehenderit blanditiis quaerat saepe nam incidunt in veniam excepturi.</p>
+                    </div>
                 </div>
             </div>
 
             <div class="mySkills">
-                
+                <h2>내 기술들</h2>
+                <div class="cardList">
+                    <div class="card" data-percent="70">
+                        <div class="canvasContainer">
+                            <canvas></canvas>
+                        </div>
+                        <div class="info">
+                            <p>HTML/CSS</p>
+                        </div>
+                    </div>
+                    <div class="card" data-percent="66">
+                        <div class="canvasContainer">
+                            <canvas></canvas>
+                        </div>
+                        <div class="info">
+                            <p>Unity</p>
+                        </div>
+                    </div>
+                    <div class="card" data-percent="62">
+                        <div class="canvasContainer">
+                            <canvas></canvas>
+                        </div>
+                        <div class="info">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="card" data-percent="40">
+                        <div class="canvasContainer">
+                            <canvas></canvas>
+                        </div>
+                        <div class="info">
+                            <p>JSP</p>
+                        </div>
+                    </div>
+                    <div class="card" data-percent="18">
+                        <div class="canvasContainer">
+                            <canvas></canvas>
+                        </div>
+                        <div class="info">
+                            <p>Spring</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="whatIdid">
-
+                <div class="didBox">
+                    <h2>공부중...</h2>
+                    <div class="gridBox">
+                        <div class="one">
+                            <div class="ready">
+                                <p>준비중...</p>
+                            </div>
+                            <div class="name">
+                                <a href="#"><p></p></a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div class="name">
+                                <a href="https://github.com/ririblathmerhen/jobMath"><p>Node.js 기초 연습</p></a>
+                            </div>
+                            <div class="img">
+                                <img src="/images/nodeJS.png">
+                            </div>
+                        </div>
+                        <div class="three">
+                                <div class="img">
+                                    <img src="/images/CanvasDraw.PNG">
+                                </div>
+                            <div class="name">
+                                <a href="https://github.com/ririblathmerhen/canvasGrap"><p>JS와 Canvas</p></a>
+                            </div>
+                        </div>
+                        <div class="four">
+                            <div class="name">
+                                <a href="#"><p></p></a>
+                            </div>
+                            <div class="ready">
+                                <p>준비중...</p>
+                            </div>
+                        </div>
+                        <div class="five">
+                            <div class="name">
+                                <a href="#"><p></p></a>
+                            </div>
+                            <div class="ready">
+                                <p>준비중...</p>
+                            </div>
+                        </div>
+                        <div class="six">
+                            <div class="name">
+                                <a href="#"><p></p></a>
+                            </div>
+                            <div class="ready">
+                                <p>준비중...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <footer>
+            <div class="info">
+                <span>이름</span>: 하성민 <br>
+                <span>메일</span>: mongjja106@gmail.com <br>
+                <span>전화번호</span>: 010-xxxx-7610
+            </div>
+        </footer>
     </div>
 </body>
 </html>
