@@ -187,17 +187,27 @@ section>.whatIdid {
 
 .whatIdid > .didBox > .gridBox > div {
     z-index: 1;
-    box-shadow: 4px 4px 7px black;
+    box-shadow: 4px 4px 7px rgba(0,0,0,0.5);
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
 }
 
-.whatIdid > .didBox > .gridBox > div > .img > img:hover {
-    margin-top: 85%;
-    margin-left: 35%;
+.whatIdid > .didBox > .gridBox > div > .img > img {
     transition: all 0.5s;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.whatIdid > .didBox > .gridBox > div > .img > img:hover {
+    transform: scale(1.2);
+}
+
+.whatIdid > .didBox > .gridBox > div > .img {
+    width:100%;
+    height:100%;
 }
 
 .whatIdid > .didBox > .gridBox > div > .name {
@@ -216,15 +226,7 @@ section>.whatIdid {
     text-align: center;
     line-height: 30px;
     font-weight: bold;
-}
-
-.whatIdid > .didBox > .gridBox > div > .img > img {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    z-index: -1;
-    transition: all 0.5s;
+    transition:all 0.5s;
 }
 
 .ready {
@@ -243,27 +245,22 @@ section>.whatIdid {
 
 .two {
     grid-column: 3 / 5;
-    grid-row: 1;
+    grid-row: 1/3;
 }
 
 .three {
-    grid-column: 1;
-    grid-row: 2;
+    grid-column: 1/2;
+    grid-row: 2/4;
 }
 
 .four {
-    grid-column: 2 / 4;
-    grid-row: 2;
-}
-
-.five {
-    grid-column: 4;
-    grid-row: 2;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .six {
-    grid-column: 1 / 5;
-    grid-row: 3;
+    grid-column: 3 / 5;
+    grid-row: 3/4;
 }
 
 footer {
