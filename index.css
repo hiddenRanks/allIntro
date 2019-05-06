@@ -71,11 +71,11 @@ header>.mainText {
     transform: translate(-50%, -50%);
 }
 
-header > .mainText > p {
+header>.mainText>p {
     text-shadow: 2px 2px 10px black;
 }
 
-header > .mainText > p > span {
+header>.mainText>p>span {
     color: #FE2E2E;
 }
 
@@ -123,12 +123,22 @@ section>.whatIdid {
     width: 100%;
     height: 250px;
     margin-left: 10px;
-    padding: 55px 30px;
+    padding: 30px 30px;
 }
 
 .introBox>.intro>h2 {
     text-align: center;
     margin-bottom: 15px;
+}
+
+.introBox > .intro > h2 > span {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.introBox > .intro > p {
+    text-align: center;
+    line-height: 40px;
 }
 
 .mySkills>h2 {
@@ -157,7 +167,7 @@ section>.whatIdid {
     height: 100%;
 }
 
-.card > .info>p {
+.card>.info>p {
     font-weight: bold;
     font-size: 22px;
     text-align: center;
@@ -167,17 +177,17 @@ section>.whatIdid {
     background-color: #ddd;
 }
 
-.whatIdid > .didBox {
+.whatIdid>.didBox {
     margin-top: 2%;
 }
 
-.whatIdid > .didBox > h2 {
+.whatIdid>.didBox>h2 {
     margin-bottom: 30px;
     margin-left: 12%;
 }
 
-.whatIdid > .didBox > .gridBox {
-    width: 1410px;
+.whatIdid>.didBox>.gridBox {
+    width: 1510px;
     height: 600px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -185,32 +195,37 @@ section>.whatIdid {
     margin: 0 auto;
 }
 
-.whatIdid > .didBox > .gridBox > div {
+.whatIdid>.didBox>.gridBox>div {
     z-index: 1;
-    box-shadow: 4px 4px 7px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
 }
 
-.whatIdid > .didBox > .gridBox > div > .img > img {
+.whatIdid>.didBox>.gridBox>div>.img img {
+    position: absolute;
     transition: all 0.5s;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.whatIdid > .didBox > .gridBox > div > .img > img:hover {
+.whatIdid>.didBox>.gridBox>div:hover .name {
+    opacity: 0.8;
+}
+
+.whatIdid>.didBox>.gridBox>div:hover .img img {
     transform: scale(1.2);
 }
 
-.whatIdid > .didBox > .gridBox > div > .img {
-    width:100%;
-    height:100%;
+.whatIdid>.didBox>.gridBox>div>.img {
+    width: 100%;
+    height: 100%;
 }
 
-.whatIdid > .didBox > .gridBox > div > .name {
+.whatIdid>.didBox>.gridBox>div>.name {
     position: absolute;
     background-color: black;
     opacity: 0.5;
@@ -221,17 +236,18 @@ section>.whatIdid {
     z-index: 0;
 }
 
-.whatIdid > .didBox > .gridBox > div > .name > a > p {
+.whatIdid>.didBox>.gridBox>div>.name>a>p {
     color: #fff;
     text-align: center;
     line-height: 30px;
     font-weight: bold;
-    transition:all 0.5s;
+    transition: all 0.5s;
 }
 
 .ready {
     position: absolute;
-    top: 45%; left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 3px 3px 4px gray;
     font-weight: bold;
@@ -240,17 +256,17 @@ section>.whatIdid {
 
 .one {
     grid-column: 1 / 3;
-    grid-row: 1;
+    grid-row: 1 / 2;
 }
 
 .two {
     grid-column: 3 / 5;
-    grid-row: 1/3;
+    grid-row: 1 / 3;
 }
 
 .three {
-    grid-column: 1/2;
-    grid-row: 2/4;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
 }
 
 .four {
@@ -258,26 +274,27 @@ section>.whatIdid {
     grid-row: 2 / 3;
 }
 
+.five {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
 .six {
-    grid-column: 3 / 5;
-    grid-row: 3/4;
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
 }
 
 footer {
     width: 100%;
-    height: 100px;
+    height: 80px;
     margin-top: 30px;
     background-color: gray;
     position: relative;
 }
 
-footer > .info {
+footer>.info {
     position: absolute;
     font-size: 17px;
-    margin-left: 40px;
-    margin-top: 15px;
-}
-
-footer > .info > span {
-    font-weight: bold;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
 }
