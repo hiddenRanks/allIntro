@@ -35,10 +35,10 @@ class Card {
     draw(p) {
         this.ctx.clearRect(0, 0, this.c.width, this.c.height);
 
-        this.ctx.beginPath();
-        this.ctx.arc(this.x, this.y, this.r - 50, 0, 2 * PI);
-        this.ctx.fillStyle = "#e2eced";
-        this.ctx.fill();
+        // this.ctx.beginPath();
+        // this.ctx.arc(this.x, this.y, this.r - 50, 0, 2 * PI);
+        // this.ctx.fillStyle = "#ddd";
+        // this.ctx.fill();
 
         this.ctx.beginPath();
         this.ctx.moveTo(this.x, this.y);
